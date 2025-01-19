@@ -7,35 +7,68 @@
   
   <body>
   
-  
-  
-  <img src="./img/logo2.png" draggable="false" width="500px"
+  <!--      LOGO		-->
+  <img src="./img/logo2.png" draggable="false" width="500px" alt="logo"
 		style="display: block; margin-left: auto; margin-right: auto; padding-top: 30px; right;">
   
-  <p></p>
-  
+  <!--      DUEL		-->
   <div class="games">
-  
-	<button onclick="duel()">
-		<img src="./img/duel.png" draggable="false" width="200px">
-	</button>
+	<section>
+		<button onclick="duel()" >
+			<img src="./img/duel.png" draggable="false" width="150px">
+		</button>
+	</section>
 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 	
-	<button onClick="roulette()">
-		<img src="./img/roulette.png" draggable="false" width="200px">
-	</button>
+	<!--      ROULETTE		-->
+	<section>
+		<button onClick="roulette()">
+			<img src="./img/roulette.png" draggable="false" width="150px">
+		</button>
+	</section>
 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 	
-	<button onClick="cf()">
-		<img src="./img/coinflip.png" draggable="false" width="200px">
-	</button>
+	<!--      CF		-->
+	<section>
+		<button onClick="cf()">
+			<img src="./img/coinflip.png" draggable="false" width="150px">
+		</button>
+	</section>
 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-	<button onClick="aviator()">
-	<img src="./img/aviator.png" draggable="false" width="200px">
-	</button>
-  
+	<!--      AVIATOR		-->
+	<section>
+		<button onClick="aviator()">
+			<img src="./img/aviator.png" draggable="false" width="150px">
+		</button>
+	</section>
   </div>
+  
+  <!--      CHAT		-->
+  <div>
+	<div id="chatBox"/>
+	<textarea id="chatInput" name="chatInput" rows="1" cols="20" placeholder="chat..." maxlength="50"></textarea>
+  </div>
+  
+  <!--      USER		-->
+  <div>
+	<div id="userBox"></div>
+		<button id="withdraw" onClick="withdraw()">Withdraw</button>
+		<button id="deposit" onClick="deposit()">Deposit</button>
+		<div id="user">
+			<p2>The Cooler Jordan</p2> <br>
+			<p3>R12 000.00</p3>
+		</div>
+  </div>
+  
+  <div id="links">
+	<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/X_icon.svg/1200px-X_icon.svg.png" alt="twitter" width="36px">
+	&nbsp;&nbsp;
+	<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/768px-Instagram_icon.png" width="35px" alt="instagram">
+	&nbsp;&nbsp;
+	<img src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/636e0a6a49cf127bf92de1e2_icon_clyde_blurple_RGB.png" width="40px" alt="discord">
+  </div>
+  
   </body>
   
 </html>
